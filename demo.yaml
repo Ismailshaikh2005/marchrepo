@@ -1,0 +1,33 @@
+# Demo key value format, after colon space is mandatory, if we want to give some discription then we have to comment that discription using # (hash)
+name: ismail # mention your name here
+age: 28 # mention your age here
+city: pune # mention your city
+hobby: playing cricket # mention your hobby
+
+--- # yaml document seprator
+
+name: akshay # mention your name
+age: 30 # mention your age here
+city: pune # mention your city
+hobby: watching movies
+
+---
+# Directory / heading
+person:
+  name: shubham
+  age: 25
+  city: pune
+
+  # Array / Lists
+
+  persons: #Dictionary
+    - name: akshay # here array means (-)
+      age: 30
+      city: pune
+    - name: shubham
+      age: 25
+      city: pune
+
+
+
+

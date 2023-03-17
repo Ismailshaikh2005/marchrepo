@@ -1,0 +1,15 @@
+#lists, Multiple Lists, Dictionary
+persons: #Dictonary
+  name: ismail
+  age: 28 # objects
+  city: pune
+  hobbies: #Dictionary with single list
+    - playing cricket # (-) Array
+    - reading
+  friends: # Dictionary with multiple list
+    - name: akshay
+      age: 30
+      city: pune
+    - name: shubham
+      age: 25
+      city: pune

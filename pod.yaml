@@ -1,0 +1,30 @@
+apiVersion: v1
+kind: pod
+metadata:
+  name: ismail-pod
+  labels:
+    app: ismail-pod
+spec:
+  containers:
+    - name: ismail-pod
+      image: nginx
+
+---
+
+apiVersion: apps/vi
+kind: Replicaset
+metadata:
+  name: demo-rs
+  labels:
+    app: demo-rs
+spec:
+  replicas: 2
+  template:
+    metadata:
+      name: ismail-pod
+    labels:
+      app: ismail-pod
+    spec:
+      containers:
+    - name: ismail-pod
+      image: nginx
